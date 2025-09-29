@@ -1,0 +1,1 @@
+O paradigma orientado a objetos é responsável por simular objetos do mundo real
