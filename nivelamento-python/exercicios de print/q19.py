@@ -1,0 +1,6 @@
+print("--- Lista de Compras --- ")
+print("pão")
+print("queijo")
+print("carne")
+print("café")
+print("chá")
