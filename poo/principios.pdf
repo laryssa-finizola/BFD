@@ -1,0 +1,27 @@
+No paradigma orientado a objetos, existem princípios que regem a modelagem e que acabam trazendo certas vantagens, são eles:
+
+a) Abstração: o princípio da abstração nasce da ideia de abstrair apenas o que é necessário dentro do problema que estamos tentando resolver.
+
+Exemplo:
+Se o problema a ser resolvido é cadastrar um novo usuário, as informações precisam ser restringidas para apenas aquilo que eu quero saber
+desse usuário, como o nome, o email, senha, telefone, etc…
+Nesse caso, eu não estaria colocando informações desnecessárias como qual a cor do cabelo da pessoa, se tem filhos ou não, entre outras informações.
+A ideia é apenas trazer as informações necessárias para resolver o problema.
+
+
+b) Encapsulamento: o encapsulamento consiste basicamente em “esconder” certas informações como medidas de segurança. 
+No encapsulamento, por exemplo, eu posso gerenciar quais informações e funcionalidades podem ser acessadas e quais não podem, 
+além disso, é possível deixar visível a informação apenas para outras classes que eu quero. 
+
+c) Herança: a herança é fundamental na orientação a objetos, uma vez que ela serve como um pilar na hora de economizar código, 
+a herança está baseada na presença de uma Classe que servirá de modelo para outras classes do mesmo segmento.
+
+Exemplo do software baseado no Uber:
+Classe Usuario, a classe usuario nesse caso seria a Classe Mãe e ela teria informações como email, telefone, senha e outras características básicas de um usuário.
+Entretanto, o usuario podem ser de dois tipos = Motorista ou Passageiro, essas duas outras classes (Motorista e Passageiro) seriam as Classes Filhas de Usuario, 
+ou seja, elas herdam todas as informações compostas na classe mãe.
+
+d) Polimorfismo: consiste na ideia de uma mesma informação ou funcionalidade ser descrita de várias formas diferentes. 
+
+Exemplo:
+imagine o método calcularArea(), enquanto pra o quadrado esse calculo será lado ao quadrado, pra um círculo a área vai ser pi vezes o raio.
