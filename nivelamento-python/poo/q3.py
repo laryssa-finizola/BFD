@@ -1,5 +1,5 @@
 class Carro:
-    def __init__(self, estado):
+    def __init__(self, estado="novo"):
         self.estado = estado
 
 #objetos
