@@ -249,6 +249,179 @@ print(f"Saldo após depósito: {conta.saldo}")
 conta.sacar(500)
 
 
+class Pessoa:
+    def falar(self): 
+        print("Olá, tudo bem?")
+
+p1 = Pessoa()
+p1.falar()
 
 
 
+
+class Carro:
+    def __init__(self,  marca, modelo, ano):
+        self.marca = marca
+        self.modelo = modelo
+        self.ano = ano
+
+marca = input("Digite a marca do carro: ")
+modelo = input("Digite o modelo do carro: ")
+ano = input("Digite o ano do carro: ")
+
+carro = Carro(marca, modelo, ano)
+print(f"Carro criado: {carro.marca} {carro.modelo} {carro.ano}")
+
+
+class Retangulo:
+    def __init__(self,  largura, altura):
+        self.largura = largura
+        self.altura = altura
+    def area(self):
+        return self.largura * self.altura
+
+r1 = Retangulo(5, 10)
+print(f"Área do retângulo: {r1.area()}")
+
+
+
+class Aluno:
+    def __init__(self,  n1, n2):
+        self.n1 = n1
+        self.n2 = n2
+
+    def media(self):
+        return (self.n1 + self.n2) / 2
+
+notas = Aluno(5, 10)
+print(f"Média do aluno: {notas.media()}")
+
+
+
+class Produto: 
+    def __init__(self, nome, preco):
+        self.nome = nome
+        self.preco = preco
+
+    def calcular_desconto(self, porcentagem):
+        desconto = self.preco * (porcentagem / 100)
+        return self.preco - desconto
+    
+produto1 = Produto("camisa", 80)
+desconto = produto1.calcular_desconto(10)
+    
+print(f"Nome: {produto1.nome},Preço sem desconto: {produto1.preco}, Preço com desconto: {desconto}")
+
+
+class Pessoa: 
+    def __init__(self, idade):
+        self.idade = idade
+
+    def maior_idade(self):
+        if self.idade >= 18:
+            return True
+        else:
+            return False
+        
+p1 = Pessoa(20)
+print(f"Pessoa 1 tem maior idade? : {p1.maior_idade()}")
+
+p2 = Pessoa(15)
+print(f"Pessoa 2 tem maior idade? : {p2.maior_idade()}")
+
+
+class Banco: 
+    def __init__(self, clientes):
+        self.clientes = clientes 
+
+# Objetos
+clientes = Banco(["Ana", "Maria", "José"])     
+
+print(f"Clientes do banco: {clientes.clientes}")
+
+class Motor: 
+    def __init__(self, ligado=False):
+        self.ligado = ligado
+    
+    def ligar_motor(self):
+        self.ligado = True
+
+# Objetos
+motor1 = Motor()
+motor1.ligar_motor()
+
+print(f"Motor está ligado? {motor1.ligado}")
+
+class Casa: 
+    def __init__(self, cor, tamanho):
+        self.cor = cor
+        self.tamanho = tamanho
+
+# Objetos
+c1 = Casa("azul", "grande")
+c2 = Casa("vermelha", "pequena")
+
+print(f"Casa 1 - Cor: {c1.cor}, Tamanho: {c1.tamanho}")
+print(f"Casa 2 - Cor: {c2.cor}, Tamanho: {c2.tamanho}")
+
+
+class Pessoa: 
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+        print(f"Pessoa {self.nome} criada com idade {self.idade}")
+
+# Objetos
+p1 = Pessoa("Ana", 30)
+p2 = Pessoa("Maria", 25)
+
+
+
+class Carro: 
+    def __init__(self, estado):
+        self.estado = estado
+
+    def mostrar_estado(self):
+        return self.estado
+    
+#objetos 
+c1 = Carro("novo")
+c2 = Carro("semi novo")
+
+print(f"Estado do carro 1: {c1.mostrar_estado()}")
+print(f"Estado do carro 2: {c2.mostrar_estado()}")
+
+
+class Computador:
+    def __init__(self, estado):
+        self.estado = estado
+    
+    def info(self):
+        if self.estado == True:
+            return "computador ligado"
+        else:
+            return "computador desligado"
+
+teste1 = Computador(True)
+print(teste1.info())
+
+teste2 = Computador(False)
+print(teste2.info())
+
+
+class Aluno:
+    def __init__(self, nota):
+        self.nota = nota
+    
+    def situacao(self):
+        if self.nota >= 7:
+            return "Aprovado"
+        else:
+            return "Reprovado"
+
+a1 = Aluno(8)
+print(f"Aluno 1: Nota {a1.nota} - {a1.situacao()}")
+
+
+a2 = Aluno(5)
+print(f"Aluno 2: Nota {a2.nota} - {a2.situacao()}")

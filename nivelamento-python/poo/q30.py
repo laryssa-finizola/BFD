@@ -1,14 +1,16 @@
 class Aluno:
-    def __init__(self, nota1, nota2):
-        self.nota1 = nota1
-        self.nota2 = nota2
-
-    def media (nota1, nota2):
-        media = (nota1 + nota2)/2
-        return media
+    def __init__(self, nota):
+        self.nota = nota
     
-    def situacao(media):
-        if media >= 7:
-            print("Aprovado")
+    def situacao(self):
+        if self.nota >= 7:
+            return "Aprovado"
         else:
-            print("Reprovado")
+            return "Reprovado"
+
+a1 = Aluno(8)
+print(f"Aluno 1: Nota {a1.nota} - {a1.situacao()}")
+
+
+a2 = Aluno(5)
+print(f"Aluno 2: Nota {a2.nota} - {a2.situacao()}")

@@ -8,5 +8,8 @@ class Conta:
 conta = Conta()
 print(f"Saldo inicial: {conta.saldo}")
 
-conta.depositar(500)
-print(f"Saldo após depósito: {conta.saldo}")
+conta.depositar(700)
+print(f"Saldo após primeiro depósito: {conta.saldo} reais")
+
+conta.depositar(77)
+print("Saldo após segundo depósito: ", conta.saldo, "reais")
