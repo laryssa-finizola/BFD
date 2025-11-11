@@ -185,11 +185,89 @@ for numero in range(10, 0, -1):
 
 
 
+#q22 não consegui
+
+soma = 0
+for i in range(1, 51):
+    if i % 2 == 0:
+        soma = i + soma
+
+print(f"A soma dos números pares de 1 a 50 é: {soma}")
+
+
+
+
+numero = int(input("Digite um número inteiro positivo: "))
+divisores = []
+if numero > 0:
+    for i in range(1, numero + 1):
+        if numero % i == 0:
+            divisores.append(i)
+    
+    print(f"Os divisores de {numero} são: {divisores}")
+else:
+    print("Por favor, digite um número inteiro positivo.")
+
+
+
+
+idades = [3, 18, 90, 10, 7, 25]
+maior_idade = 0
+
+for i in idades:
+    if i >= 18:
+        maior_idade += 1
+        
+print(f"Número de pessoas maiores de idade: {maior_idade}")
 
 
 
 
 
+
+frase = "hoje tive aula de python"
+
+contador = 0
+
+for letra in frase:
+    if letra == "a":
+        contador += 1
+
+print(f"A letra 'a' aparece {contador} vezes na frase.")
+
+
+
+
+
+a = 0
+b = 1
+
+for _ in range(8):
+    proximo_termo = a + b
+    
+    print(proximo_termo)
+    a = b
+    b = proximo_termo
+
+print()
+
+
+
+
+numeros = [8, 5, 7, 0, 9, 5, 6, 0, 10, 0]
+
+maior_num = numeros[0]
+menor_num = numeros[0]
+
+
+for i in numeros:
+    if i > maior_num:
+        if i %2 != 0:
+            maior_num = i
+
+
+print(f"Lista de Números: {numeros}")
+print(f"Maior número ímpar: {maior_num}")
 
 
 
