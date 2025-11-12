@@ -169,3 +169,48 @@ else:
 
 
 
+## exemplos de slicing - o resumo está no resumo.ipynb ##
+
+
+
+nome = "Glestiano"
+
+print(nome[:4])
+
+
+nome = "Glestiano"
+print(nome[-3:])
+
+
+nome = "Glestiano"
+print(nome[2:7])
+
+
+nome = "Glestiano"
+print(nome[::-1])
+
+
+nome = "Glestiano"
+letra = "a"
+contador = nome.count(letra)
+print(contador)
+
+
+
+letra = input("Digite uma letra para verificar se está presente na palavra: ")
+palavra = 'Glestiano'
+
+indice = -1
+for i in range(len(palavra) ):
+    if palavra[i] == letra:
+        indice = i
+        break
+
+if indice != -1:
+    print(f"A letra '{letra}' aparece pela primeira vez no índice {indice}.")
+else:
+    print(f"A letra '{letra}' não está presente na palavra.")
+
+
+
+
