@@ -18,4 +18,4 @@ def receberNotas():
     status = situacao(media)
     return status
 
-print(f"{receberNotas()}")
+print(receberNotas())
